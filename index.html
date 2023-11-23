@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link rel="stylesheet" href="style.css"/>
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -14,18 +21,86 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_593671c3e65bf3f6b3097eb468f1b6e7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
 </head>
 <body>
-    <div>
-        <h1>Prediksi Jarak dan Peta</h1>
-        <h4>RPacitan = 1186.529 km</h4>
-        <h4>RBantul = 1095.702 km</h4>
-        <h4>RPrambanan = 1098.472 km</h4>
-        <h4>RMaguwo = 1065.579 km</h4>
-        <h4>RSerang = 1834.937 km</h4>
-        <h4>RBali = 1739.84 km</h4>
-    </div>
-    <div class="folium-map" id="map"></div>
-    <script src="script.js"></script>
+    
+    <div><h1>Prediksi Jarak dan Peta</h1><h4>RPacitan = 1186.529 km</h4><h4>RBantul = 1095.702 km</h4><h4>RPrambanan = 1098.472 km</h4><h4>RMaguwo = 1065.579 km</h4><h4>RSerang = 1834.937 km</h4><h4>RBali = 1739.84 km</h4></div>
+    
+            <div class="folium-map" id="map_593671c3e65bf3f6b3097eb468f1b6e7" ></div>
+        
 </body>
+<script>
+    
+    
+            var map_593671c3e65bf3f6b3097eb468f1b6e7 = L.map(
+                "map_593671c3e65bf3f6b3097eb468f1b6e7",
+                {
+                    center: [-2.2331, 117.2841],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8e89d913525268510b2c5b290a6d10f2 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_593671c3e65bf3f6b3097eb468f1b6e7);
+        
+    
+            var circle_95414e2c5d94321ceb17b9a5708a1382 = L.circle(
+                [-8.1849, 111.1162],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1186529.0, "stroke": true, "weight": 3}
+            ).addTo(map_593671c3e65bf3f6b3097eb468f1b6e7);
+        
+    
+            var circle_97d6ab341ef9946237c65f1f968a651d = L.circle(
+                [-7.7249, 110.5068],
+                {"bubblingMouseEvents": true, "color": "#FA8072", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "##FA8072", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1098472.0, "stroke": true, "weight": 3}
+            ).addTo(map_593671c3e65bf3f6b3097eb468f1b6e7);
+        
+    
+            var circle_7084177da485d2bd476c8b58c4063421 = L.circle(
+                [-7.7249, 110.507],
+                {"bubblingMouseEvents": true, "color": "#ADFF2F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ADFF2F", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1095702.0, "stroke": true, "weight": 3}
+            ).addTo(map_593671c3e65bf3f6b3097eb468f1b6e7);
+        
+    
+            var circle_6cccfb8c0591c3f802a77d4d98bdda85 = L.circle(
+                [-7.7533, 110.424],
+                {"bubblingMouseEvents": true, "color": "#800080", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1065579.0, "stroke": true, "weight": 3}
+            ).addTo(map_593671c3e65bf3f6b3097eb468f1b6e7);
+        
+    
+            var circle_51ffa220cc3c764a96ebf76e07c4a4ec = L.circle(
+                [-6.1295, 106.222],
+                {"bubblingMouseEvents": true, "color": "#FFFF00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFFF00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1834937.0, "stroke": true, "weight": 3}
+            ).addTo(map_593671c3e65bf3f6b3097eb468f1b6e7);
+        
+    
+            var circle_c982978b3b2cf9bf0424d99fa0ca5d9b = L.circle(
+                [-8.4733, 115.1698],
+                {"bubblingMouseEvents": true, "color": "#808080", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#808080", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1739840.0, "stroke": true, "weight": 3}
+            ).addTo(map_593671c3e65bf3f6b3097eb468f1b6e7);
+        
+</script>
 </html>
